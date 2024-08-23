@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+<img width="1514" alt="Screenshot 2024-08-23 at 11 31 43 AM" src="https://github.com/user-attachments/assets/1dd85de8-925d-42a7-ace6-f3e36695c33b">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Markdown Previewer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+Markdown Previewer is a web application that allows you to write and preview Markdown in real-time. The application is built using React with TypeScript, and it provides a simple and intuitive interface for users to see the rendered output of their Markdown text as they type.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Real-time Preview: The editor provides an instant preview of your Markdown content as you type.
+Responsive Design: The layout adapts to different screen sizes, providing an optimal experience on both mobile and desktop devices.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Project Structure
+
+-App.tsx: The main component that holds the editor and previewer components.
+-index.css: Global styles applied throughout the application.
+-App.css: Styles specific to the App component, including the layout for the editor and previewer.
+-index.html: The main HTML file that loads the React application.
+
+## Installation
+
+Clone the repository:
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+git clone https://github.com/your-username/markdown-previewer.git
+cd markdown-previewer
+```
+Install the dependencies:
+```
+npm install
+```
+Start the development server:
+```
+npm run dev
 ```
