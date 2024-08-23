@@ -23,7 +23,7 @@ Responsive Design: The layout adapts to different screen sizes, providing an opt
 
 Clone the repository:
 ```
-git clone https://github.com/your-username/markdown-previewer.git
+git clone https://github.com/GavinWang-2024/Markdown-Previewer.git
 cd markdown-previewer
 ```
 Install the dependencies:
