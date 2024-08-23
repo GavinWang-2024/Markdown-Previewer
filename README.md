@@ -9,14 +9,18 @@ Markdown Previewer is a web application that allows you to write and preview Mar
 ## Features
 
 Real-time Preview: The editor provides an instant preview of your Markdown content as you type.
+
 Responsive Design: The layout adapts to different screen sizes, providing an optimal experience on both mobile and desktop devices.
 
 
 ## Project Structure
 
 -App.tsx: The main component that holds the editor and previewer components.
+
 -index.css: Global styles applied throughout the application.
+
 -App.css: Styles specific to the App component, including the layout for the editor and previewer.
+
 -index.html: The main HTML file that loads the React application.
 
 ## Installation
